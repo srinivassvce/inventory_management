@@ -1,0 +1,65 @@
+﻿services:
+    inv_manage_api:
+        build: .
+        image: inv-man-img-6.0
+        ports:
+            - "7056:80"
+        depends_on:
+            - sql
+        networks:
+            - frontend
+            - backend
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+            - ConnectionStrings__IMConnection=Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+    prod_reg_api:
+        build: .
+        image: prod-reg-6.0 
+        ports:
+            - "7160:80"
+        depends_on:
+            - sql
+        networks:
+            - frontend
+            - backend
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+            - ConnectionStrings__ProductsConnection=Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+    gateway:
+        image: inv-gateway-img-6.0
+        ports:
+            - "8090:80"
+        depends_on:
+            - prod_reg_api
+            - inv_manage_api
+            - sql
+        networks:
+            - frontend
+            - backend
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+            - ConnectionStrings__ProductsConnection=Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+    sql:
+        image: "mcr.microsoft.com/mssql/server:2022-latest"
+        container_name: SQLEXPRESS
+        hostname: sqlexpressdb
+        ports:
+            - "1435:1433"
+        networks:
+            - backend
+        environment:
+            - ACCEPT_EULA=y
+            - MSSQL_SA_PASSWORD=Password@123
+        volumes:
+            - c:\test:/var/opt/mssql/data
+        healthcheck:
+            test: ["CMD-SHELL", "/opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P Password@123 -Q 'SELECT 1' || exit 1"]
+            interval: 10s
+            retries: 10
+            start_period: 10s
+            timeout: 3s
+networks:
+   frontend: 
+    driver: bridge
+   backend:
+    driver: bridge

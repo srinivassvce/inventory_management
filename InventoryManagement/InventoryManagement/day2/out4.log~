@@ -1,0 +1,186 @@
+failed to get console mode for stdout: The handle is invalid.
+[1A[1B[0G[?25l[+] Running 3/0
+ - Container SQLEXPRESS                            Created 0.0s
+ - Container inventorymanagement-inv_manage_api-1  Created 0.0s
+ - Container inventorymanagement-prod_reg_api-1    Created 0.0s
+ - Container inventorymanagement-gateway-1         Recreate 0.1s
+[?25h[1A[1A[1A[1A[1A[0G[?25l[34m[+] Running 4/4[0m
+ - Container SQLEXPRESS                            Created 0.0s
+ - Container inventorymanagement-inv_manage_api-1  Created 0.0s
+ - Container inventorymanagement-prod_reg_api-1    Created 0.0s
+ - Container inventorymanagement-gateway-1         Recreated 0.1s
+[?25hAttaching to SQLEXPRESS, inventorymanagement-gateway-1, inventorymanagement-inv_manage_api-1, inventorymanagement-prod_reg_api-1
+SQLEXPRESS                            | /opt/mssql/bin/permissions_check.sh: line 4: [: : integer expression expected
+SQLEXPRESS                            | /opt/mssql/bin/permissions_check.sh: line 59: [: : integer expression expected
+SQLEXPRESS                            | SQL Server 2022 will run as non-root by default.
+SQLEXPRESS                            | This container is running as user mssql.
+SQLEXPRESS                            | Your master database file is owned by mssql.
+SQLEXPRESS                            | To learn more visit https://go.microsoft.com/fwlink/?linkid=2099216.
+SQLEXPRESS                            | 2023-03-31 11:51:06.98 Server      Microsoft SQL Server 2022 (RTM) - 16.0.1000.6 (X64) 
+SQLEXPRESS                            | 	Oct  8 2022 05:58:25 
+SQLEXPRESS                            | 	Copyright (C) 2022 Microsoft Corporation
+SQLEXPRESS                            | 	Developer Edition (64-bit) on Linux (Ubuntu 20.04.5 LTS) <X64>
+SQLEXPRESS                            | 2023-03-31 11:51:06.99 Server      UTC adjustment: 0:00
+SQLEXPRESS                            | 2023-03-31 11:51:06.99 Server      (c) Microsoft Corporation.
+SQLEXPRESS                            | 2023-03-31 11:51:07.00 Server      All rights reserved.
+SQLEXPRESS                            | 2023-03-31 11:51:07.00 Server      Server process ID is 508.
+SQLEXPRESS                            | 2023-03-31 11:51:07.00 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+SQLEXPRESS                            | 2023-03-31 11:51:07.01 Server      Registry startup parameters: 
+SQLEXPRESS                            | 	 -d /var/opt/mssql/data/master.mdf
+SQLEXPRESS                            | 	 -l /var/opt/mssql/data/mastlog.ldf
+SQLEXPRESS                            | 	 -e /var/opt/mssql/log/errorlog
+SQLEXPRESS                            | 2023-03-31 11:51:07.04 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 12 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:07.06 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:07.06 Server      Detected 20404 MB of RAM. This is an informational message; no user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:07.08 Server      Using conventional memory in the memory manager.
+SQLEXPRESS                            | 2023-03-31 11:51:07.08 Server      Detected pause instruction latency: 34 cycles.
+SQLEXPRESS                            | 2023-03-31 11:51:07.10 Server      Page exclusion bitmap is enabled.
+SQLEXPRESS                            | 2023-03-31 11:51:07.19 Server      Buffer pool extension is not supported on Linux platform.
+SQLEXPRESS                            | 2023-03-31 11:51:07.19 Server      Buffer Pool: Allocating 4194304 bytes for 3172442 hashPages.
+inventorymanagement-inv_manage_api-1  | Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+SQLEXPRESS                            | 2023-03-31 11:51:07.50 Server      Buffer pool extension is already disabled. No action is necessary.
+SQLEXPRESS                            | 2023-03-31 11:51:08.26 Server      Installing Client TLS certificates to the store.
+SQLEXPRESS                            | 2023-03-31 11:51:08.29 Server      Error searching first file in /var/opt/mssql/security/ca-certificates: 3(The system cannot find the path specified.)
+SQLEXPRESS                            | 2023-03-31 11:51:08.30 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
+SQLEXPRESS                            | 2023-03-31 11:51:08.41 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+SQLEXPRESS                            | 2023-03-31 11:51:08.48 Server      Query Store settings initialized with enabled = 1, 
+SQLEXPRESS                            | 2023-03-31 11:51:08.53 Server      The maximum number of dedicated administrator connections for this instance is '1'
+SQLEXPRESS                            | 2023-03-31 11:51:08.58 Server      Node configuration: node 0: CPU mask: 0x0000000000000fff:0 Active CPU mask: 0x0000000000000fff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:08.64 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:08.74 Server      In-Memory OLTP initialized on standard machine.
+SQLEXPRESS                            | 2023-03-31 11:51:08.79 Server      CLR version v4.0.30319 loaded.
+SQLEXPRESS                            | 2023-03-31 11:51:08.82 Server      [INFO] Created Extended Events session 'hkenginexesession'
+SQLEXPRESS                            | 2023-03-31 11:51:08.83 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+SQLEXPRESS                            | ForceFlush is enabled for this instance. 
+SQLEXPRESS                            | 2023-03-31 11:51:08.88 Server      Total Log Writer threads: 2, Node CPUs: 6, Nodes: 1, Log Writer threads per CPU: 1, Log Writer threads per Node: 2
+SQLEXPRESS                            | 2023-03-31 11:51:08.90 Server      clflushopt is selected for pmem flush operation.
+SQLEXPRESS                            | 2023-03-31 11:51:08.91 Server      Software Usage Metrics is disabled.
+SQLEXPRESS                            | 2023-03-31 11:51:08.97 spid34s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:51:09.00 spid34s     Starting up database 'master'.
+inventorymanagement-gateway-1         | Hosting environment: Production
+inventorymanagement-gateway-1         | Content root path: /App
+inventorymanagement-gateway-1         | Now listening on: http://0.0.0.0:80
+inventorymanagement-gateway-1         | Application started. Press Ctrl+C to shut down.
+SQLEXPRESS                            | 2023-03-31 11:51:10.03 Server      Common language runtime (CLR) functionality initialized.
+SQLEXPRESS                            | ForceFlush feature is enabled for log durability.
+SQLEXPRESS                            | 2023-03-31 11:51:10.25 spid34s     17 transactions rolled forward in database 'master' (1:0). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:10.28 spid34s     0 transactions rolled back in database 'master' (1:0). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:10.29 spid34s     Recovery is writing a checkpoint in database 'master' (1). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:10.49 spid34s     Service Master Key could not be decrypted using one of its encryptions. See sys.key_encryptions for details.
+SQLEXPRESS                            | 2023-03-31 11:51:10.49 spid34s     An error occurred during Service Master Key initialization. SQLErrorCode=33095, State=14, LastOsError=2.
+SQLEXPRESS                            | 2023-03-31 11:51:10.50 spid34s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:51:10.51 spid37s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:51:10.52 spid34s     Starting up database 'model_replicatedmaster'.
+SQLEXPRESS                            | 2023-03-31 11:51:10.52 spid37s     Starting up database 'mssqlsystemresource'.
+SQLEXPRESS                            | 2023-03-31 11:51:10.54 spid37s     The resource database build version is 16.00.1000. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:10.58 spid37s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:51:10.59 spid37s     Starting up database 'model'.
+SQLEXPRESS                            | 2023-03-31 11:51:10.89 spid43s     A self-generated certificate was successfully loaded for encryption.
+SQLEXPRESS                            | 2023-03-31 11:51:10.90 spid43s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:51:10.90 spid43s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:51:10.91 Logon       Error: 17187, Severity: 16, State: 1.
+SQLEXPRESS                            | 2023-03-31 11:51:10.91 Logon       SQL Server is not ready to accept new client connections. Wait a few minutes before trying again. If you have access to the error log, look for the informational message that indicates that SQL Server is ready before trying to connect again.  [CLIENT: 172.18.0.3]
+SQLEXPRESS                            | 2023-03-31 11:51:10.91 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:51:10.92 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:51:10.93 Server      Dedicated admin connection support was established for listening locally on port 1434.
+SQLEXPRESS                            | 2023-03-31 11:51:10.94 spid43s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:51:10.94 spid43s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:51:10.95 spid43s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+inventorymanagement-inv_manage_api-1  | Unhandled exception. Microsoft.Data.SqlClient.SqlException (0x80131904): A connection was successfully established with the server, but then an error occurred during the pre-login handshake. (provider: TCP Provider, error: 0 - No such file or directory)
+inventorymanagement-inv_manage_api-1  |  ---> System.ComponentModel.Win32Exception (2): No such file or directory
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(SqlConnectionEncryptOption encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired, Boolean tlsFirst)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerConnection.OpenDbConnection(Boolean errorsExpected)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext _, TState s)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+inventorymanagement-inv_manage_api-1  |    at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+inventorymanagement-inv_manage_api-1  |    at Program.<Main>$(String[] args) in /InventoryManagement/Program.cs:line 74
+inventorymanagement-inv_manage_api-1  | ClientConnectionId:e9c4255f-8b24-4be5-910c-158c4fca2ae2
+inventorymanagement-inv_manage_api-1  | Error Number:2,State:0,Class:20
+SQLEXPRESS                            | 2023-03-31 11:51:11.26 spid34s     1 transactions rolled forward in database 'model_replicatedmaster' (32762:0). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:11.28 spid34s     0 transactions rolled back in database 'model_replicatedmaster' (32762:0). This is an informational message only. No user action is required.
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (40ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT 1
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (35ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT 1
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT [MigrationId], [ProductVersion]
+inventorymanagement-prod_reg_api-1    |       FROM [__EFMigrationsHistory]
+inventorymanagement-prod_reg_api-1    |       ORDER BY [MigrationId];
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Migrations[20405]
+inventorymanagement-prod_reg_api-1    |       No migrations were applied. The database is already up to date.
+SQLEXPRESS                            | 2023-03-31 11:51:11.45 spid34s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:51:11.46 spid34s     Starting up database 'model_msdb'.
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+inventorymanagement-prod_reg_api-1    |       Now listening on: http://[::]:80
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-prod_reg_api-1    |       Application started. Press Ctrl+C to shut down.
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-prod_reg_api-1    |       Hosting environment: Production
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-prod_reg_api-1    |       Content root path: /App/
+SQLEXPRESS                            | 2023-03-31 11:51:12.03 spid34s     1 transactions rolled forward in database 'model_msdb' (32761:0). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:12.05 spid34s     0 transactions rolled back in database 'model_msdb' (32761:0). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:12.10 spid34s     Resource governor reconfiguration succeeded.
+SQLEXPRESS                            | 2023-03-31 11:51:12.10 spid34s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:12.10 spid52s     External governance manager initialized
+SQLEXPRESS                            | 2023-03-31 11:51:12.11 spid34s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:12.11 spid52s     Attribute synchronization manager initialized
+SQLEXPRESS                            | 2023-03-31 11:51:12.12 spid34s     XE session 'system_health' started.
+SQLEXPRESS                            | 2023-03-31 11:51:12.15 spid34s     XE session 'telemetry_xevents' started.
+SQLEXPRESS                            | 2023-03-31 11:51:12.18 spid34s     SQL Trace ID 1 was started by login "sa".
+SQLEXPRESS                            | 2023-03-31 11:51:12.19 spid34s     Server name is 'fa2b4d95421a'. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:12.23 spid37s     Clearing tempdb database.
+SQLEXPRESS                            | 2023-03-31 11:51:12.23 spid65s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:12.24 spid68s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:51:12.24 spid65s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:12.25 spid68s     Starting up database 'msdb'.
+inventorymanagement-inv_manage_api-1 exited with code 139
+SQLEXPRESS                            | 2023-03-31 11:51:12.87 spid68s     1 transactions rolled forward in database 'msdb' (4:0). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:12.93 spid68s     0 transactions rolled back in database 'msdb' (4:0). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:51:13.76 spid37s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:51:13.77 spid37s     Starting up database 'tempdb'.
+SQLEXPRESS                            | 2023-03-31 11:51:13.95 spid35s     Using 'dbghelp.dll' version '4.0.5'
+SQLEXPRESS                            | 2023-03-31 11:51:18.86 spid37s     The tempdb database has 8 data file(s).
+SQLEXPRESS                            | 2023-03-31 11:51:18.87 spid65s     The Service Broker endpoint is in disabled or stopped state.
+SQLEXPRESS                            | 2023-03-31 11:51:18.87 spid65s     The Database Mirroring endpoint is in disabled or stopped state.
+SQLEXPRESS                            | 2023-03-31 11:51:18.89 spid65s     Service Broker manager has started.
+SQLEXPRESS                            | 2023-03-31 11:51:18.89 spid34s     Recovery is complete. This is an informational message only. No user action is required.

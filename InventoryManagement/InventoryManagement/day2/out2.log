@@ -1,0 +1,386 @@
+failed to get console mode for stdout: The handle is invalid.
+[1A[1B[0G[?25l[+] Running 1/0
+ - Container SQLEXPRESS          Created 0.0s
+ - Container prod-reg-container  Recreate 0.0s
+ - Container inv_man_container   Recreate 0.0s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS          Created 0.0s
+ - Container prod-reg-container  Recreate 0.1s
+ - Container inv_man_container   Recreate 0.1s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS          Created 0.0s
+ - Container prod-reg-container  Recreate 0.2s
+ - Container inv_man_container   Recreate 0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ - Container SQLEXPRESS          Created 0.0s
+ - Container prod-reg-container  Recreated 0.3s
+ - Container inv_man_container   Recreated 0.3s
+ - Container gateway-container   Recreate 0.0s
+[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Running 3/4
+ - Container SQLEXPRESS          Created 0.0s
+ - Container prod-reg-container  Recreated 0.3s
+ - Container inv_man_container   Recreated 0.3s
+ - Container gateway-container   Recreate 0.1s
+[?25h[1A[1A[1A[1A[1A[0G[?25l[+] Running 3/4
+ - Container SQLEXPRESS          Created 0.0s
+ - Container prod-reg-container  Recreated 0.3s
+ - Container inv_man_container   Recreated 0.3s
+ - Container gateway-container   Recreate 0.2s
+[?25h[1A[1A[1A[1A[1A[0G[?25l[34m[+] Running 4/4[0m
+ - Container SQLEXPRESS          Created 0.0s
+ - Container prod-reg-container  Recreated 0.3s
+ - Container inv_man_container   Recreated 0.3s
+ - Container gateway-container   Recreated 0.3s
+[?25hAttaching to SQLEXPRESS, inventorymanagement-gateway-1, inventorymanagement-inv_manage_api-1, inventorymanagement-prod_reg_api-1
+SQLEXPRESS                            | /opt/mssql/bin/permissions_check.sh: line 4: [: : integer expression expected
+SQLEXPRESS                            | /opt/mssql/bin/permissions_check.sh: line 59: [: : integer expression expected
+SQLEXPRESS                            | SQL Server 2022 will run as non-root by default.
+SQLEXPRESS                            | This container is running as user mssql.
+SQLEXPRESS                            | Your master database file is owned by mssql.
+SQLEXPRESS                            | To learn more visit https://go.microsoft.com/fwlink/?linkid=2099216.
+inventorymanagement-inv_manage_api-1  | Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+SQLEXPRESS                            | 2023-03-31 11:03:15.08 Server      Microsoft SQL Server 2022 (RTM) - 16.0.1000.6 (X64) 
+SQLEXPRESS                            | 	Oct  8 2022 05:58:25 
+SQLEXPRESS                            | 	Copyright (C) 2022 Microsoft Corporation
+SQLEXPRESS                            | 	Developer Edition (64-bit) on Linux (Ubuntu 20.04.5 LTS) <X64>
+SQLEXPRESS                            | 2023-03-31 11:03:15.09 Server      UTC adjustment: 0:00
+SQLEXPRESS                            | 2023-03-31 11:03:15.09 Server      (c) Microsoft Corporation.
+SQLEXPRESS                            | 2023-03-31 11:03:15.09 Server      All rights reserved.
+SQLEXPRESS                            | 2023-03-31 11:03:15.09 Server      Server process ID is 508.
+SQLEXPRESS                            | 2023-03-31 11:03:15.10 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+SQLEXPRESS                            | 2023-03-31 11:03:15.10 Server      Registry startup parameters: 
+SQLEXPRESS                            | 	 -d /var/opt/mssql/data/master.mdf
+SQLEXPRESS                            | 	 -l /var/opt/mssql/data/mastlog.ldf
+SQLEXPRESS                            | 	 -e /var/opt/mssql/log/errorlog
+SQLEXPRESS                            | 2023-03-31 11:03:15.12 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 12 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:15.13 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:15.14 Server      Detected 20404 MB of RAM. This is an informational message; no user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:15.14 Server      Using conventional memory in the memory manager.
+SQLEXPRESS                            | 2023-03-31 11:03:15.15 Server      Detected pause instruction latency: 34 cycles.
+SQLEXPRESS                            | 2023-03-31 11:03:15.16 Server      Page exclusion bitmap is enabled.
+SQLEXPRESS                            | 2023-03-31 11:03:15.23 Server      Buffer pool extension is not supported on Linux platform.
+SQLEXPRESS                            | 2023-03-31 11:03:15.23 Server      Buffer Pool: Allocating 4194304 bytes for 3172443 hashPages.
+SQLEXPRESS                            | 2023-03-31 11:03:15.48 Server      Buffer pool extension is already disabled. No action is necessary.
+SQLEXPRESS                            | 2023-03-31 11:03:16.31 Server      Installing Client TLS certificates to the store.
+SQLEXPRESS                            | 2023-03-31 11:03:16.33 Server      Error searching first file in /var/opt/mssql/security/ca-certificates: 3(The system cannot find the path specified.)
+SQLEXPRESS                            | 2023-03-31 11:03:16.34 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
+SQLEXPRESS                            | 2023-03-31 11:03:16.44 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+SQLEXPRESS                            | 2023-03-31 11:03:16.49 Server      Query Store settings initialized with enabled = 1, 
+SQLEXPRESS                            | 2023-03-31 11:03:16.51 Server      The maximum number of dedicated administrator connections for this instance is '1'
+SQLEXPRESS                            | 2023-03-31 11:03:16.55 Server      Node configuration: node 0: CPU mask: 0x0000000000000fff:0 Active CPU mask: 0x0000000000000fff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:16.60 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:16.65 Server      CLR version v4.0.30319 loaded.
+SQLEXPRESS                            | 2023-03-31 11:03:16.67 Server      In-Memory OLTP initialized on standard machine.
+SQLEXPRESS                            | 2023-03-31 11:03:16.72 Server      [INFO] Created Extended Events session 'hkenginexesession'
+SQLEXPRESS                            | 2023-03-31 11:03:16.73 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+SQLEXPRESS                            | ForceFlush is enabled for this instance. 
+SQLEXPRESS                            | 2023-03-31 11:03:16.78 Server      Total Log Writer threads: 2, Node CPUs: 6, Nodes: 1, Log Writer threads per CPU: 1, Log Writer threads per Node: 2
+SQLEXPRESS                            | 2023-03-31 11:03:16.80 Server      clflushopt is selected for pmem flush operation.
+SQLEXPRESS                            | 2023-03-31 11:03:16.81 Server      Software Usage Metrics is disabled.
+SQLEXPRESS                            | 2023-03-31 11:03:16.83 spid34s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:03:16.84 spid34s     Starting up database 'master'.
+inventorymanagement-gateway-1         | Hosting environment: Production
+inventorymanagement-gateway-1         | Content root path: /App
+inventorymanagement-gateway-1         | Now listening on: http://0.0.0.0:80
+inventorymanagement-gateway-1         | Application started. Press Ctrl+C to shut down.
+SQLEXPRESS                            | 2023-03-31 11:03:17.32 Server      Common language runtime (CLR) functionality initialized.
+SQLEXPRESS                            | ForceFlush feature is enabled for log durability.
+SQLEXPRESS                            | 2023-03-31 11:03:17.69 spid34s     Service Master Key could not be decrypted using one of its encryptions. See sys.key_encryptions for details.
+SQLEXPRESS                            | 2023-03-31 11:03:17.70 spid34s     An error occurred during Service Master Key initialization. SQLErrorCode=33095, State=14, LastOsError=2.
+SQLEXPRESS                            | 2023-03-31 11:03:17.71 spid34s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:03:17.72 spid37s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:03:17.73 spid34s     Starting up database 'model_replicatedmaster'.
+SQLEXPRESS                            | 2023-03-31 11:03:17.73 spid37s     Starting up database 'mssqlsystemresource'.
+SQLEXPRESS                            | 2023-03-31 11:03:17.75 spid37s     The resource database build version is 16.00.1000. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:17.80 spid37s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:03:17.81 spid37s     Starting up database 'model'.
+SQLEXPRESS                            | 2023-03-31 11:03:18.16 spid43s     A self-generated certificate was successfully loaded for encryption.
+SQLEXPRESS                            | 2023-03-31 11:03:18.18 spid43s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:03:18.18 spid43s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:03:18.19 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:03:18.19 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:03:18.20 Server      Dedicated admin connection support was established for listening locally on port 1434.
+SQLEXPRESS                            | 2023-03-31 11:03:18.21 spid43s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:03:18.22 spid43s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+SQLEXPRESS                            | 2023-03-31 11:03:18.22 spid43s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:18.73 spid34s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:03:18.74 spid34s     Starting up database 'model_msdb'.
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-inv_manage_api-1  |       Executed DbCommand (34ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-inv_manage_api-1  |       SELECT 1
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-inv_manage_api-1  |       Executed DbCommand (31ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-inv_manage_api-1  |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-inv_manage_api-1  |       Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-inv_manage_api-1  |       SELECT 1
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-inv_manage_api-1  |       Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-inv_manage_api-1  |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-inv_manage_api-1  |       Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-inv_manage_api-1  |       SELECT [MigrationId], [ProductVersion]
+inventorymanagement-inv_manage_api-1  |       FROM [__EFMigrationsHistory]
+inventorymanagement-inv_manage_api-1  |       ORDER BY [MigrationId];
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Migrations[20405]
+inventorymanagement-inv_manage_api-1  |       No migrations were applied. The database is already up to date.
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT 1
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+inventorymanagement-inv_manage_api-1  |       Now listening on: http://[::]:80
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (27ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-inv_manage_api-1  |       Application started. Press Ctrl+C to shut down.
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-inv_manage_api-1  |       Hosting environment: Production
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-inv_manage_api-1  |       Content root path: /App/
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT 1
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-prod_reg_api-1    |       Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-prod_reg_api-1    |       SELECT [MigrationId], [ProductVersion]
+inventorymanagement-prod_reg_api-1    |       FROM [__EFMigrationsHistory]
+inventorymanagement-prod_reg_api-1    |       ORDER BY [MigrationId];
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Migrations[20405]
+inventorymanagement-prod_reg_api-1    |       No migrations were applied. The database is already up to date.
+SQLEXPRESS                            | 2023-03-31 11:03:19.45 spid34s     Resource governor reconfiguration succeeded.
+SQLEXPRESS                            | 2023-03-31 11:03:19.45 spid46s     External governance manager initialized
+SQLEXPRESS                            | 2023-03-31 11:03:19.45 spid34s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:19.46 spid46s     Attribute synchronization manager initialized
+SQLEXPRESS                            | 2023-03-31 11:03:19.46 spid34s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:19.47 spid34s     XE session 'system_health' started.
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+inventorymanagement-prod_reg_api-1    |       Now listening on: http://[::]:80
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-prod_reg_api-1    |       Application started. Press Ctrl+C to shut down.
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-prod_reg_api-1    |       Hosting environment: Production
+inventorymanagement-prod_reg_api-1    | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inventorymanagement-prod_reg_api-1    |       Content root path: /App/
+SQLEXPRESS                            | 2023-03-31 11:03:19.50 spid34s     XE session 'telemetry_xevents' started.
+SQLEXPRESS                            | 2023-03-31 11:03:19.53 spid34s     SQL Trace ID 1 was started by login "sa".
+SQLEXPRESS                            | 2023-03-31 11:03:19.55 spid34s     Server name is 'fa2b4d95421a'. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:19.59 spid37s     Clearing tempdb database.
+SQLEXPRESS                            | 2023-03-31 11:03:19.59 spid58s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:19.59 spid61s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:03:19.60 spid58s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:03:19.61 spid61s     Starting up database 'msdb'.
+SQLEXPRESS                            | 2023-03-31 11:03:21.04 spid37s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS                            | 2023-03-31 11:03:21.04 spid37s     Starting up database 'tempdb'.
+SQLEXPRESS                            | 2023-03-31 11:03:21.82 spid35s     Using 'dbghelp.dll' version '4.0.5'
+SQLEXPRESS                            | 2023-03-31 11:03:26.94 spid37s     The tempdb database has 8 data file(s).
+SQLEXPRESS                            | 2023-03-31 11:03:26.96 spid58s     The Service Broker endpoint is in disabled or stopped state.
+SQLEXPRESS                            | 2023-03-31 11:03:26.97 spid58s     The Database Mirroring endpoint is in disabled or stopped state.
+SQLEXPRESS                            | 2023-03-31 11:03:26.99 spid58s     Service Broker manager has started.
+SQLEXPRESS                            | 2023-03-31 11:03:27.01 spid34s     Recovery is complete. This is an informational message only. No user action is required.
+inventorymanagement-inv_manage_api-1  | [40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+inventorymanagement-inv_manage_api-1  |       Failed to determine the https port for redirect.
+inventorymanagement-inv_manage_api-1  | Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+inventorymanagement-inv_manage_api-1  | Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+inventorymanagement-inv_manage_api-1  | Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+inventorymanagement-inv_manage_api-1  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inventorymanagement-inv_manage_api-1  |       Executed DbCommand (33ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inventorymanagement-inv_manage_api-1  |       SELECT [p].[SGTIN], [p].[CheckOutDate], [p].[CheckinDate], [p].[ExpirationDate], [p].[GTIN], [p].[Lot], [p].[ReasonForCheckout]
+inventorymanagement-inv_manage_api-1  |       FROM [ProductItems] AS [p]
+SQLEXPRESS                            | 2023-03-31 11:08:19.14 spid65      XE session 'telemetry_xevents' stopping.
+SQLEXPRESS                            | 2023-03-31 11:08:19.16 spid65      XE session 'telemetry_xevents' started.
+SQLEXPRESS                            | 2023-03-31 11:08:30.81 spid65      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
+SQLEXPRESS                            | 2023-03-31 11:08:30.84 spid65      Using 'xplog70.dll' version '2022.160.1000' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
+SQLEXPRESS                            | 2023-03-31 11:20:16.41 spid51      XE session 'telemetry_xevents' stopping.
+SQLEXPRESS                            | 2023-03-31 11:20:16.42 spid51      XE session 'telemetry_xevents' started.
+Gracefully stopping... (press Ctrl+C again to force)
+failed to get console mode for stdout: The handle is invalid.
+failed to get console mode for stdout: The handle is invalid.
+[1A[1B[0G[?25l[+] Running 0/0
+ - Container inventorymanagement-gateway-1  Stopping 0.1s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 0.2s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 0.3s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 0.4s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 0.5s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 0.6s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 0.7s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 0.8s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 0.9s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 1.0s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Container inventorymanagement-gateway-1  Stopping 1.1s
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.0s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.0s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.2s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.2s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.4s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.4s
+[?25hfailed to get console mode for stdout: The handle is invalid.
+[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.4s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.4s
+[?25h[1A[1B[0G[?25l[+] Running 0/0
+ - Container SQLEXPRESS                            Killing 0.1s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.1s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.1s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.5s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.5s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 0/3
+ - Container SQLEXPRESS                            Killing 0.2s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.2s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.7s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.7s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 0/3
+ - Container SQLEXPRESS                            Killing 0.3s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.3s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.7s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.7s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 0/3
+ - Container SQLEXPRESS                            Killing 0.4s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.4s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.4s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.9s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 0/3
+ - Container SQLEXPRESS                            Killing 0.5s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.5s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.5s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 0.9s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 0/3
+ - Container SQLEXPRESS                            Killing 0.6s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.6s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.6s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.1s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.1s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 0/3
+ - Container SQLEXPRESS                            Killing 0.7s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.7s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.7s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.2s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 0/3
+ - Container SQLEXPRESS                            Killing 0.8s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.8s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.8s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.2s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 0/3
+ - Container SQLEXPRESS                            Killing 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Killing 0.9s
+ - Container inventorymanagement-prod_reg_api-1    Killing 0.9s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.3s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS                            Killed 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Killing 1.0s
+ - Container inventorymanagement-prod_reg_api-1    Killing 1.0s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.4s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.4s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS                            Killed 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Killing 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Killing 1.1s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.6s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.6s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS                            Killed 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Killing 1.2s
+ - Container inventorymanagement-prod_reg_api-1    Killing 1.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.6s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.6s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS                            Killed 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Killing 1.3s
+ - Container inventorymanagement-prod_reg_api-1    Killing 1.3s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.8s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.8s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS                            Killed 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Killing 1.4s
+ - Container inventorymanagement-prod_reg_api-1    Killing 1.4s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopping 1.8s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 1.8s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS                            Killed 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Killing 1.5s
+ - Container inventorymanagement-prod_reg_api-1    Killing 1.5s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 1/3
+ - Container SQLEXPRESS                            Killed 0.9s
+ - Container inventorymanagement-inv_manage_api-1  Error while Killing 1.5s
+ - Container inventorymanagement-prod_reg_api-1    Error while Killing 1.5s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopped 1.9s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 2.0s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopped 1.9s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 2.0s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopped 1.9s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 2.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopped 1.9s
+ - Container inventorymanagement-inv_manage_api-1  Stopping 2.2s
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 4/3
+ - Container inventorymanagement-gateway-1         Stopped 1.1s
+ - Container inventorymanagement-prod_reg_api-1    Stopped 1.9s
+ - Container inventorymanagement-inv_manage_api-1  Stopped 2.3s
+ - Container SQLEXPRESS                            Stopped 0.0s
+[?25h

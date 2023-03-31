@@ -1,0 +1,32 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/Registration/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "prod_reg_api",
+          "Port": 80
+
+        }
+      ],
+      "UpstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/Registration/{everything}"
+    },
+    {
+      "DownstreamPathTemplate": "/InventoryManagement/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "inv_manage_api",
+          "Port": 80
+        }
+      ],
+      "UpstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/im/{everything}"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:8090"
+  }
+}

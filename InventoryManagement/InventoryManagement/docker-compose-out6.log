@@ -1,0 +1,254 @@
+failed to get console mode for stdout: The handle is invalid.
+[1A[1B[0G[?25l[+] Running 0/0
+ - Network inventorymanagement_backend  Creating 0.1s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network inventorymanagement_backend  Creating 0.2s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network inventorymanagement_backend  Creating 0.3s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network inventorymanagement_backend  Creating 0.4s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network inventorymanagement_backend  Creating 0.5s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network inventorymanagement_backend  Creating 0.6s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network inventorymanagement_backend  Creating 0.7s
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ - Network inventorymanagement_backend  Creating 0.8s
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/1[0m
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Creating 0.1s
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Creating 0.2s
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Creating 0.3s
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Creating 0.4s
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Creating 0.5s
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Creating 0.6s
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Creating 0.7s
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Creating 0.8s
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Created 0.8s
+ - Container SQLEXPRESS                  Creating 0.1s
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Created 0.8s
+ - Container SQLEXPRESS                  Created 0.1s
+ - Container prod-reg-container          Creating 0.1s
+ - Container inv_man_container           Creating 0.1s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[34m[+] Running 5/5[0m
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Created 0.8s
+ - Container SQLEXPRESS                  Created 0.1s
+ - Container prod-reg-container          Created 0.1s
+ - Container inv_man_container           Created 0.1s
+ - Container gateway-container           Creating 0.1s
+[?25h[1A[1A[1A[1A[1A[1A[1A[0G[?25l[34m[+] Running 6/6[0m
+ - Network inventorymanagement_backend   Created 0.8s
+ - Network inventorymanagement_frontend  Created 0.8s
+ - Container SQLEXPRESS                  Created 0.1s
+ - Container prod-reg-container          Created 0.1s
+ - Container inv_man_container           Created 0.1s
+ - Container gateway-container           Created 0.1s
+[?25hAttaching to SQLEXPRESS, gateway-container, inv_man_container, prod-reg-container
+SQLEXPRESS          | /opt/mssql/bin/permissions_check.sh: line 4: [: : integer expression expected
+SQLEXPRESS          | /opt/mssql/bin/permissions_check.sh: line 59: [: : integer expression expected
+SQLEXPRESS          | SQL Server 2022 will run as non-root by default.
+SQLEXPRESS          | This container is running as user mssql.
+SQLEXPRESS          | Your master database file is owned by mssql.
+SQLEXPRESS          | To learn more visit https://go.microsoft.com/fwlink/?linkid=2099216.
+inv_man_container   | Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+SQLEXPRESS          | 2023-03-30 16:58:13.64 Server      Microsoft SQL Server 2022 (RTM) - 16.0.1000.6 (X64) 
+SQLEXPRESS          | 	Oct  8 2022 05:58:25 
+SQLEXPRESS          | 	Copyright (C) 2022 Microsoft Corporation
+SQLEXPRESS          | 	Developer Edition (64-bit) on Linux (Ubuntu 20.04.5 LTS) <X64>
+SQLEXPRESS          | 2023-03-30 16:58:13.64 Server      UTC adjustment: 0:00
+SQLEXPRESS          | 2023-03-30 16:58:13.64 Server      (c) Microsoft Corporation.
+SQLEXPRESS          | 2023-03-30 16:58:13.64 Server      All rights reserved.
+SQLEXPRESS          | 2023-03-30 16:58:13.64 Server      Server process ID is 496.
+SQLEXPRESS          | 2023-03-30 16:58:13.64 Server      Logging SQL Server messages in file '/var/opt/mssql/log/errorlog'.
+SQLEXPRESS          | 2023-03-30 16:58:13.65 Server      Registry startup parameters: 
+SQLEXPRESS          | 	 -d /var/opt/mssql/data/master.mdf
+SQLEXPRESS          | 	 -l /var/opt/mssql/data/mastlog.ldf
+SQLEXPRESS          | 	 -e /var/opt/mssql/log/errorlog
+SQLEXPRESS          | 2023-03-30 16:58:13.66 Server      SQL Server detected 1 sockets with 6 cores per socket and 12 logical processors per socket, 12 total logical processors; using 12 logical processors based on SQL Server licensing. This is an informational message; no user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:13.67 Server      SQL Server is starting at normal priority base (=7). This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:13.67 Server      Detected 20404 MB of RAM. This is an informational message; no user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:13.67 Server      Using conventional memory in the memory manager.
+SQLEXPRESS          | 2023-03-30 16:58:13.68 Server      Detected pause instruction latency: 22 cycles.
+SQLEXPRESS          | 2023-03-30 16:58:13.69 Server      Page exclusion bitmap is enabled.
+SQLEXPRESS          | 2023-03-30 16:58:13.75 Server      Buffer pool extension is not supported on Linux platform.
+SQLEXPRESS          | 2023-03-30 16:58:13.75 Server      Buffer Pool: Allocating 4194304 bytes for 3172337 hashPages.
+SQLEXPRESS          | 2023-03-30 16:58:13.91 Server      Buffer pool extension is already disabled. No action is necessary.
+SQLEXPRESS          | 2023-03-30 16:58:14.37 Server      Installing Client TLS certificates to the store.
+SQLEXPRESS          | 2023-03-30 16:58:14.38 Server      Error searching first file in /var/opt/mssql/security/ca-certificates: 3(The system cannot find the path specified.)
+SQLEXPRESS          | 2023-03-30 16:58:14.38 Server      CPU vectorization level(s) detected:  SSE SSE2 SSE3 SSSE3 SSE41 SSE42 AVX AVX2 POPCNT BMI1 BMI2
+SQLEXPRESS          | 2023-03-30 16:58:14.44 Server      Successfully initialized the TLS configuration. Allowed TLS protocol versions are ['1.0 1.1 1.2']. Allowed TLS ciphers are ['ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA:!DHE-RSA-AES256-GCM-SHA384:!DHE-RSA-AES128-GCM-SHA256:!DHE-RSA-AES256-SHA:!DHE-RSA-AES128-SHA'].
+SQLEXPRESS          | 2023-03-30 16:58:14.47 Server      Query Store settings initialized with enabled = 1, 
+SQLEXPRESS          | 2023-03-30 16:58:14.48 Server      The maximum number of dedicated administrator connections for this instance is '1'
+SQLEXPRESS          | 2023-03-30 16:58:14.50 Server      Node configuration: node 0: CPU mask: 0x0000000000000fff:0 Active CPU mask: 0x0000000000000fff:0. This message provides a description of the NUMA configuration for this computer. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:14.53 Server      Using dynamic lock allocation.  Initial allocation of 2500 Lock blocks and 5000 Lock Owner blocks per node.  This is an informational message only.  No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:14.56 Server      In-Memory OLTP initialized on standard machine.
+SQLEXPRESS          | 2023-03-30 16:58:14.58 Server      [INFO] Created Extended Events session 'hkenginexesession'
+SQLEXPRESS          | 2023-03-30 16:58:14.59 Server      Database Instant File Initialization: enabled. For security and performance considerations see the topic 'Database Instant File Initialization' in SQL Server Books Online. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:14.61 Server      CLR version v4.0.30319 loaded.
+SQLEXPRESS          | ForceFlush is enabled for this instance. 
+SQLEXPRESS          | 2023-03-30 16:58:14.61 Server      Total Log Writer threads: 2, Node CPUs: 6, Nodes: 1, Log Writer threads per CPU: 1, Log Writer threads per Node: 2
+SQLEXPRESS          | 2023-03-30 16:58:14.62 Server      clflushopt is selected for pmem flush operation.
+SQLEXPRESS          | 2023-03-30 16:58:14.62 Server      Software Usage Metrics is disabled.
+SQLEXPRESS          | 2023-03-30 16:58:14.63 spid34s     [1]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS          | 2023-03-30 16:58:14.64 spid34s     Starting up database 'master'.
+SQLEXPRESS          | 2023-03-30 16:58:15.07 Server      Common language runtime (CLR) functionality initialized.
+SQLEXPRESS          | ForceFlush feature is enabled for log durability.
+SQLEXPRESS          | 2023-03-30 16:58:15.27 spid34s     Service Master Key could not be decrypted using one of its encryptions. See sys.key_encryptions for details.
+SQLEXPRESS          | 2023-03-30 16:58:15.28 spid34s     An error occurred during Service Master Key initialization. SQLErrorCode=33095, State=14, LastOsError=2.
+SQLEXPRESS          | 2023-03-30 16:58:15.28 spid34s     [32762]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS          | 2023-03-30 16:58:15.29 spid37s     [32767]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS          | 2023-03-30 16:58:15.29 spid34s     Starting up database 'model_replicatedmaster'.
+SQLEXPRESS          | 2023-03-30 16:58:15.29 spid37s     Starting up database 'mssqlsystemresource'.
+SQLEXPRESS          | 2023-03-30 16:58:15.30 spid37s     The resource database build version is 16.00.1000. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:15.34 spid37s     [3]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS          | 2023-03-30 16:58:15.35 spid37s     Starting up database 'model'.
+SQLEXPRESS          | 2023-03-30 16:58:15.40 spid43s     A self-generated certificate was successfully loaded for encryption.
+SQLEXPRESS          | 2023-03-30 16:58:15.40 spid43s     Server is listening on [ 'any' <ipv6> 1433] accept sockets 1.
+SQLEXPRESS          | 2023-03-30 16:58:15.40 spid43s     Server is listening on [ 'any' <ipv4> 1433] accept sockets 1.
+SQLEXPRESS          | 2023-03-30 16:58:15.41 Server      Server is listening on [ ::1 <ipv6> 1434] accept sockets 1.
+SQLEXPRESS          | 2023-03-30 16:58:15.41 Server      Server is listening on [ 127.0.0.1 <ipv4> 1434] accept sockets 1.
+SQLEXPRESS          | 2023-03-30 16:58:15.41 Server      Dedicated admin connection support was established for listening locally on port 1434.
+SQLEXPRESS          | 2023-03-30 16:58:15.42 spid43s     Server is listening on [ ::1 <ipv6> 1431] accept sockets 1.
+SQLEXPRESS          | 2023-03-30 16:58:15.42 spid43s     Server is listening on [ 127.0.0.1 <ipv4> 1431] accept sockets 1.
+SQLEXPRESS          | 2023-03-30 16:58:15.42 spid43s     SQL Server is now ready for client connections. This is an informational message; no user action is required.
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inv_man_container   |       Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inv_man_container   |       SELECT 1
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inv_man_container   |       Executed DbCommand (28ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inv_man_container   |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inv_man_container   |       Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inv_man_container   |       SELECT 1
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inv_man_container   |       Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inv_man_container   |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+prod-reg-container  |       Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+prod-reg-container  |       SELECT 1
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inv_man_container   |       Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inv_man_container   |       SELECT [MigrationId], [ProductVersion]
+inv_man_container   |       FROM [__EFMigrationsHistory]
+inv_man_container   |       ORDER BY [MigrationId];
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Migrations[20405]
+inv_man_container   |       No migrations were applied. The database is already up to date.
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+prod-reg-container  |       Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+prod-reg-container  |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+prod-reg-container  |       Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+prod-reg-container  |       SELECT 1
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+prod-reg-container  |       Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+prod-reg-container  |       SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+inv_man_container   |       Now listening on: http://[::]:80
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+prod-reg-container  |       Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+prod-reg-container  |       SELECT [MigrationId], [ProductVersion]
+prod-reg-container  |       FROM [__EFMigrationsHistory]
+prod-reg-container  |       ORDER BY [MigrationId];
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inv_man_container   |       Application started. Press Ctrl+C to shut down.
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inv_man_container   |       Hosting environment: Production
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inv_man_container   |       Content root path: /App/
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Migrations[20405]
+prod-reg-container  |       No migrations were applied. The database is already up to date.
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[14]
+prod-reg-container  |       Now listening on: http://[::]:80
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+prod-reg-container  |       Application started. Press Ctrl+C to shut down.
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+prod-reg-container  |       Hosting environment: Production
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+prod-reg-container  |       Content root path: /App/
+SQLEXPRESS          | 2023-03-30 16:58:15.96 spid34s     [32761]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS          | 2023-03-30 16:58:15.97 spid34s     Starting up database 'model_msdb'.
+gateway-container   | Hosting environment: Production
+gateway-container   | Content root path: /App
+gateway-container   | Now listening on: http://[::]:80
+gateway-container   | Application started. Press Ctrl+C to shut down.
+SQLEXPRESS          | 2023-03-30 16:58:16.49 spid34s     Resource governor reconfiguration succeeded.
+SQLEXPRESS          | 2023-03-30 16:58:16.49 spid34s     SQL Server Audit is starting the audits. This is an informational message. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:16.49 spid46s     External governance manager initialized
+SQLEXPRESS          | 2023-03-30 16:58:16.50 spid34s     SQL Server Audit has started the audits. This is an informational message. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:16.50 spid46s     Attribute synchronization manager initialized
+SQLEXPRESS          | 2023-03-30 16:58:16.50 spid34s     XE session 'system_health' started.
+SQLEXPRESS          | 2023-03-30 16:58:16.53 spid34s     XE session 'telemetry_xevents' started.
+SQLEXPRESS          | 2023-03-30 16:58:16.55 spid34s     SQL Trace ID 1 was started by login "sa".
+SQLEXPRESS          | 2023-03-30 16:58:16.56 spid34s     Server name is 'fa2b4d95421a'. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:16.59 spid37s     Clearing tempdb database.
+SQLEXPRESS          | 2023-03-30 16:58:16.59 spid53s     Always On: The availability replica manager is starting. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:16.59 spid57s     [4]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS          | 2023-03-30 16:58:16.59 spid53s     Always On: The availability replica manager is waiting for the instance of SQL Server to allow client connections. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 16:58:16.60 spid57s     Starting up database 'msdb'.
+SQLEXPRESS          | 2023-03-30 16:58:17.73 spid37s     [2]. Feature Status: PVS: 0. CTR: 0. ConcurrentPFSUpdate: 1. ConcurrentGAMUpdate: 1. ConcurrentSGAMUpdate: 1, CleanupUnderUserTransaction: 0. TranLevelPVS: 0
+SQLEXPRESS          | 2023-03-30 16:58:17.73 spid37s     Starting up database 'tempdb'.
+SQLEXPRESS          | 2023-03-30 16:58:19.63 spid35s     Using 'dbghelp.dll' version '4.0.5'
+SQLEXPRESS          | 2023-03-30 16:58:21.95 spid37s     The tempdb database has 8 data file(s).
+SQLEXPRESS          | 2023-03-30 16:58:21.96 spid62s     The Service Broker endpoint is in disabled or stopped state.
+SQLEXPRESS          | 2023-03-30 16:58:21.96 spid62s     The Database Mirroring endpoint is in disabled or stopped state.
+SQLEXPRESS          | 2023-03-30 16:58:21.98 spid62s     Service Broker manager has started.
+SQLEXPRESS          | 2023-03-30 16:58:21.98 spid34s     Recovery is complete. This is an informational message only. No user action is required.
+prod-reg-container  | [40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+prod-reg-container  |       Failed to determine the https port for redirect.
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+prod-reg-container  |       Executed DbCommand (29ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+prod-reg-container  |       SELECT [p].[GTIN], [p].[Description], [p].[IsActive], [p].[MaterialNumber], [p].[ProductName], [p].[UnitOfMeasure], [p].[Vendor]
+prod-reg-container  |       FROM [Products] AS [p]
+prod-reg-container  |       WHERE [p].[IsActive] = CAST(1 AS bit)
+inv_man_container   | [40m[1m[33mwarn[39m[22m[49m: Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware[3]
+inv_man_container   |       Failed to determine the https port for redirect.
+inv_man_container   | Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.EntityFrameworkCore.Database.Command[20101]
+inv_man_container   |       Executed DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+inv_man_container   |       SELECT [p].[SGTIN], [p].[CheckOutDate], [p].[CheckinDate], [p].[ExpirationDate], [p].[GTIN], [p].[Lot], [p].[ReasonForCheckout]
+inv_man_container   |       FROM [ProductItems] AS [p]
+SQLEXPRESS          | 2023-03-30 17:03:19.13 spid66      XE session 'telemetry_xevents' stopping.
+SQLEXPRESS          | 2023-03-30 17:03:19.15 spid66      XE session 'telemetry_xevents' started.
+SQLEXPRESS          | 2023-03-30 17:03:31.49 spid66      Attempting to load library 'xplog70.dll' into memory. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 17:03:31.51 spid66      Using 'xplog70.dll' version '2022.160.1000' to execute extended stored procedure 'xp_msver'. This is an informational message only; no user action is required.
+gateway-container   | Application is shutting down...
+gateway-container exited with code 0
+gateway-container exited with code 0
+inv_man_container   | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+inv_man_container   |       Application is shutting down...
+prod-reg-container  | [40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+prod-reg-container  |       Application is shutting down...
+prod-reg-container exited with code 0
+inv_man_container exited with code 0
+SQLEXPRESS          | 2023-03-30 17:10:40.57 spid34s     Always On: The availability replica manager is going offline because SQL Server is shutting down. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 17:10:40.57 spid34s     SQL Server is terminating in response to a 'stop' request from Service Control Manager. This is an informational message only. No user action is required.
+SQLEXPRESS          | 2023-03-30 17:10:40.58 spid34s     .NET Framework runtime has been stopped.
+prod-reg-container exited with code 0
+inv_man_container exited with code 0
+SQLEXPRESS          | RecoveryUnit::Shutdown. IsOnline: 02023-03-30 17:10:40.61 spid34s     RBPEX::NotifyFileShutdown: Called for database ID: [32762], file Id [0]
+SQLEXPRESS          | RecoveryUnit::Shutdown. IsOnline: 02023-03-30 17:10:40.65 spid34s     RBPEX::NotifyFileShutdown: Called for database ID: [32761], file Id [0]
+SQLEXPRESS          | 2023-03-30 17:10:40.68 spid62s     Service Broker manager has shut down.
+SQLEXPRESS          | RecoveryUnit::Shutdown. IsOnline: 02023-03-30 17:10:40.70 spid34s     RBPEX::NotifyFileShutdown: Called for database ID: [4], file Id [0]
+SQLEXPRESS          | RecoveryUnit::Shutdown. IsOnline: 02023-03-30 17:10:40.73 spid34s     RBPEX::NotifyFileShutdown: Called for database ID: [3], file Id [0]
+SQLEXPRESS          | 2023-03-30 17:10:40.77 spid34s     SQL Trace was stopped due to server shutdown. Trace ID = '1'. This is an informational message only; no user action is required.
+SQLEXPRESS exited with code 255
