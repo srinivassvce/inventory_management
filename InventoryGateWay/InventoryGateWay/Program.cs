@@ -16,7 +16,7 @@ namespace OcelotBasic
         {
             new WebHostBuilder()
             .UseKestrel()
-            .UseUrls("http://0.0.0.0:80")
+            /*.UseUrls("http://0.0.0.0:80")*/
             .UseContentRoot(Directory.GetCurrentDirectory())
             .ConfigureAppConfiguration((hostingContext, config) =>
             {

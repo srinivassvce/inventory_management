@@ -1,4 +1,17 @@
 ﻿services:
+    user-api:
+        build: .
+        image: user-api
+        ports:
+            - "8100:80"
+        depends_on:
+            - sql
+        networks:
+            - frontend
+            - backend
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Production
+            - ConnectionStrings__IdentityConnection=Data Source=sqlexpressdb;Initial Catalog=master;User ID=sa;Password=Password@123;Integrated Security=False;Trust Server Certificate=true 
     inv_manage_api:
         build: .
         image: inv-man-img-6.0
@@ -6,6 +19,7 @@
             - "7056:80"
         depends_on:
             - sql
+            - user-api
         networks:
             - frontend
             - backend
@@ -19,6 +33,7 @@
             - "7160:80"
         depends_on:
             - sql
+            - inv_manage_api
         networks:
             - frontend
             - backend
@@ -32,6 +47,7 @@
         depends_on:
             - prod_reg_api
             - inv_manage_api
+            - user-api
             - sql
         networks:
             - frontend

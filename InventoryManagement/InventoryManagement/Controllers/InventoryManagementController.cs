@@ -42,7 +42,7 @@ namespace InventoryManagement.Controllers
         }
 
         [HttpPost("checkOut")]
-        public async Task<ActionResult> CheckOutProductItem([FromBody] string SGTIN, ReasonsForCheckout Reason)
+        public async Task<ActionResult> CheckOutProductItem([FromQuery] string SGTIN, [FromQuery] ReasonsForCheckout Reason)
         {
             var itemToBeCheckedOut = _db.ProductItems.SingleOrDefault(item => item.SGTIN == SGTIN);
             if(itemToBeCheckedOut == null)

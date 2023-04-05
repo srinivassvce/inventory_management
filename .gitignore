@@ -1,0 +1,9 @@
+backup/*
+**/.vs/
+**/bin/Debug/
+**/bin/Release/
+InventoryGateWay/.vs/
+/im-web-app-tbd
+/InventoryManagement/InventoryManagement/day0
+/InventoryManagement/InventoryManagement/day2
+/InventoryManagement/InventoryManagement/day3

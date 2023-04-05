@@ -1,17 +1,32 @@
 ﻿{
   "Routes": [
     {
+      "DownstreamPathTemplate": "/api/auth/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "user-api",
+          "Port": 80
+        }
+      ],
+      "UpstreamScheme": "https",
+      "UpstreamPathTemplate": "/api/authenticator/{everything}"
+    },
+    {
       "DownstreamPathTemplate": "/Registration/{everything}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
           "Host": "prod_reg_api",
           "Port": 80
-
         }
       ],
       "UpstreamScheme": "https",
-      "UpstreamPathTemplate": "/api/Registration/{everything}"
+      "UpstreamPathTemplate": "/api/Registration/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Authenticator",
+        "AllowedScopes": []
+      }
     },
     {
       "DownstreamPathTemplate": "/InventoryManagement/{everything}",
@@ -23,7 +38,11 @@
         }
       ],
       "UpstreamScheme": "https",
-      "UpstreamPathTemplate": "/api/im/{everything}"
+      "UpstreamPathTemplate": "/api/im/{everything}",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Authenticator",
+        "AllowedScopes": []
+      }
     }
   ],
   "GlobalConfiguration": {
